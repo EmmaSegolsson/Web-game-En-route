@@ -1,27 +1,7 @@
 # En Route
 
-## Project screencast
-
-https://drive.google.com/file/d/11Hmbo91oHcQjW1GyKX3oGVbYMYdVhBV3/view?usp=sharing
-
-## Individual screencast
-
-- Emma Segolsson https://1drv.ms/v/s!Ah5oEZnSTbLwevykNkc1TfHVIb4?e=hlob7m 
-- Victor Lindquist https://drive.google.com/file/d/1lds6LM4OK0yeoJ7H2uQRkG5Sc2WGlWD5/view?usp=sharing
-- Jacob Molin https://drive.google.com/file/d/1Rwirb86K-MSYkDXJ6wjyr3q8hI_3kHCU/view?usp=sharing
-
-## Background
-
-We are going to build a game inspired by the board game Ticket to Ride. The game can be played by 2-5 players and the goal of the game is to collect points by building train Routes on a map. The player with the highest score at the end of the game wins. Points can be collected through:
-
-- Building a Route between two destinations on the map using Track cards
-- Completing a path between to destinations given on a Ticket card
-- (Hold the longest path)
-- (Train stations kept at end of the game)
-
-When a player has less than 3 Tracks left, the final round begins. The game ends when that same player finishes it’s turn of the final round.
-
-## Functionalities
+This game is inspired by the board game Ticket to Ride.
+A project by Emma Segolsson, Victor Lindquist and Jacob Molin.
 
 ### Create game
 
@@ -29,7 +9,7 @@ When a player has less than 3 Tracks left, the final round begins. The game ends
 - GC can share a generated join-link for other people to join the game
 - GC decides when game begins after 1-4 people have joined the game
 
-### Join game 
+### Join game
 
 - A person (not GC) can join a game via a join-link (shared by the GC)
 - Once a person has joined a game, they will be waiting in the Game Lounge until the GC starts the game
@@ -89,4 +69,5 @@ The code in this repository will mostly follow the [`Airbnb JavaScript Style Gui
 `function`.
 
 ## Authors
+
 Emma Segolsson, Victor Lindquist, Jacob Molin
