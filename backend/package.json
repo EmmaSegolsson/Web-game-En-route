@@ -1,0 +1,55 @@
+{
+  "name": "en_route_backend",
+  "version": "0.0.1",
+  "description": "The backend for En Route",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "npm run asbuild && npm run build && node lib/index.js",
+    "dev": "npm run asbuild && concurrently --raw \"npm:watch\" \"nodemon lib/index.js\"",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "asbuild:untouched": "asc --target debug",
+    "asbuild:optimized": "asc --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "keywords": [
+    "assemblyscript",
+    "express",
+    "typescript",
+    "node.js"
+  ],
+  "author": "vicli268 emmse713 jacmo699",
+  "license": "ISC",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.18.24",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "*",
+    "lodash.clonedeep": "^4.5.0",
+    "socket.io": "^4.0.1",
+    "typescript": "^4.2.4",
+    "uniqid": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@types/node": "^14.14.37",
+    "@types/uniqid": "^5.3.0",
+    "assemblyscript": "^0.18.24",
+    "concurrently": "^6.0.2",
+    "git-format-staged": "^2.1.1",
+    "husky": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "git-format-staged -f 'prettier --ignore-unknown --stdin --stdin-filepath \"{}\"' ."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "entries": ["./src/assembly/index.ts"],
+  "options": {
+    "importTable": true
+  },
+  "targets": {
+    "debug": {
+      "binaryFile": "./lib/assembly/untouched.wasm",
+      "textFile": "./lib/assembly/untouched.wat",
+      "sourceMap": true,
+      "debug": true
+    },
+    "release": {
+      "binaryFile": "./lib/assembly/optimized.wasm",
+      "textFile": "./lib/assembly/optimized.wat",
+      "sourceMap": true,
+      "optimizeLevel": 3,
+      "shrinkLevel": 1,
+      "converge": false,
+      "noAssert": false
+    }
+  }
+}
